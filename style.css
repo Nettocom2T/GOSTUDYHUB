@@ -1,0 +1,108 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+/* CORPO */
+body {
+    line-height: 1.6;
+    color: #10001f;
+    background-color: #f9f9f9;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 20px;
+    background-color: #3DBBC4;
+    text-align: center;
+}
+
+header img {
+    height: 100px;
+    cursor: default;
+}
+
+/* SEÇÕES */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ARTICLES */
+article.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LADO ESQUERDO */
+article .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+article .info a {
+    color: #10001f;
+    text-decoration: none;
+}
+
+/* LADO DIREITO (REDE SOCIAL) */
+article .instagram img {
+    height: 60px;
+}
+
+/* EFEITO HOVER */
+article a:hover {
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #3DBBC4;
+    text-align: center;
+}
+
+/* MÍDIAS */
+.container {
+    max-width: 2256px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* CELULARES */
+    @media (max-width:320px) {
+        max-width: 100%;
+        header img{
+            width: 100%;
+        }
+    }
+
+    /* TABLETS E LAPTOS */
+    @media (max-width:640px) {
+        max-width: 100%;
+    }
+
+    /* COMPUTORES E TVs */
+    @media (max-widht:1024px) {
+        max-width: 100%;
+    }
+    
+    /* 4K */
+    @media (max-widht:1440px) {
+        max-width: 100%;
+    }
+}
